@@ -1,0 +1,13 @@
+{
+    "Servers": {
+      "1": {
+        "Name": "covid-19-monitor",
+        "Group": "Servers",
+        "Port": 5432,
+        "Username": "root",
+        "Host": "postgres-covid19",
+        "SSLMode": "prefer",
+        "MaintenanceDB": "covid19"
+      }
+    }
+  }

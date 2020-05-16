@@ -1,0 +1,88 @@
+version: "3.5"
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo-covid19
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - 27017:27017      
+    volumes:
+      - covid19-mongo-data:/data/db
+    networks: 
+      - covid19-network
+
+  mongo-express:
+    image: mongo-express:latest
+    container_name: mongo-express-covid19
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_BASICAUTH_USERNAME: root
+      ME_CONFIG_BASICAUTH_PASSWORD: root
+      ME_CONFIG_MONGODB_PORT: 27017
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: root
+    depends_on:
+      - mongo
+    networks: 
+      - covid19-network
+
+  postgres:
+    image: postgres:alpine
+    container_name: postgres-covid19
+    restart: always
+    environment:
+      POSTGRES_DB: covid19
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    ports:
+      - 5432:5432
+    volumes:
+      - covid19-postgres-data:/var/lib/postgresql/data
+    networks:
+      - covid19-network
+
+  pgadmin4:
+    build:
+      dockerfile: ./pgadmin4.dockerfile
+      context: ./db/postgres
+    image: covid19/pgadmin4:alpine
+    container_name: pgadmin4-covid19
+    environment:
+      PGADMIN_DEFAULT_EMAIL: root@covid19
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - 8080:80
+    depends_on:
+      - postgres
+    networks:
+      - covid19-network
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq-covid19
+    ports:
+      - 8082:15672
+      - 5672:5672
+      - 25676:25676
+    environment:
+      RABBITMQ_DEFAULT_USER: root
+      RABBITMQ_DEFAULT_PASS: root
+    networks:
+      - covid19-network
+
+volumes:
+  covid19-postgres-data:
+    name: covid19-postgres-data
+    driver: local
+  covid19-mongo-data:
+    name: covid19-mongo-data
+    driver: local     
+
+networks:
+  covid19-network:
+    driver: bridge
+    name: covid19-network
