@@ -2,11 +2,10 @@ using System;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Sauron.Domain.Http;
 
 namespace Sauron.Infrastructure.Http
 {
-    public class HttpRequest : IHttpRequest
+    public class HttpRequest
     {
         private const string UserAgent = "Mozilla/5.0 (X11; Linux x86_64) "
                                          + "AppleWebKit/537.36 (KHTML, like Gecko) "

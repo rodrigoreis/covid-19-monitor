@@ -1,11 +1,12 @@
+using System.Web;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Sauron.Domain.Jobs;
-using Sauron.Infrastructure.Hangfire;
-using Sauron.Infrastructure.Jobs;
+using Sauron.Application;
+using Sauron.Application.UseCases.Downloads;
+using Sauron.Job.Hangfire;
 
 namespace Sauron.Job
 {
@@ -13,10 +14,11 @@ namespace Sauron.Job
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddSingleton<IDownloadContent, DownloadContent>();
-            
+            //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddUseCases();
             services.AddHangFireHandler();
+            services.AddRecurringJob<IDownloadHtmlPageUseCase, DownloadHtmlPageInput>(
+                new DownloadHtmlPageInput("http://www.uol.com.br"));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -33,8 +35,10 @@ namespace Sauron.Job
                 endpoints.MapGet("/", async context => { await context.Response.WriteAsync("Sauron"); });
             });
 
-            app.UsingHangFireHandler();
-            app.UseRunJobEverydayAtMidnight<IDownloadContent>();
+             app.UsingHangFireHandler();
+             app.UseRecurringJobs();
+             
+            // app.UseRunJobEverydayAtMidnight<IDownloadContent>();
         }
     }
 }

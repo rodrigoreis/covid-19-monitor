@@ -1,6 +1,6 @@
 using Hangfire.Dashboard;
 
-namespace Sauron.Infrastructure.Hangfire
+namespace Sauron.Job.Hangfire
 {
     public class AllowAuthorizationFilter : IDashboardAuthorizationFilter
     {

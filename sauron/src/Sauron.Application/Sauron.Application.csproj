@@ -6,11 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.4" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <ProjectReference Include="..\Sauron.Domain\Sauron.Domain.csproj" />
+    <ProjectReference Include="..\Sauron.Application.Abstractions\Sauron.Application.Abstractions.csproj" />
+    <ProjectReference Include="..\Sauron.Infrastructure\Sauron.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

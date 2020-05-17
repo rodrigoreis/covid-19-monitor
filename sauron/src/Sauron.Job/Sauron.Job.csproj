@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sauron.Infrastructure\Sauron.Infrastructure.csproj" />
+    <ProjectReference Include="..\Sauron.Application\Sauron.Application.csproj" />
   </ItemGroup>
 
 </Project>

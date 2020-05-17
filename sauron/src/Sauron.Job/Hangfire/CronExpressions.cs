@@ -1,4 +1,4 @@
-namespace Sauron.Infrastructure.Hangfire
+namespace Sauron.Job.Hangfire
 {
     public static class CronExpressions
     {
