@@ -14,7 +14,6 @@ namespace Sauron.Job
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddUseCases();
             services.AddHangFireHandler();
             services.AddRecurringJob<IDownloadHtmlPageUseCase, DownloadHtmlPageInput>(

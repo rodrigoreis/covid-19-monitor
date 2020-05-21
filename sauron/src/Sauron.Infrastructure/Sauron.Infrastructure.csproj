@@ -7,10 +7,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.4" />
+    <PackageReference Include="MongoDB.Driver" Version="2.10.4" />
   </ItemGroup>
   
   <ItemGroup>
     <ProjectReference Include="..\Sauron.Domain\Sauron.Domain.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="MongoDb" />
   </ItemGroup>
 
 </Project>

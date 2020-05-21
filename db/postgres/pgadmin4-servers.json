@@ -5,7 +5,7 @@
         "Group": "Servers",
         "Port": 5432,
         "Username": "root",
-        "Host": "postgres-covid19",
+        "Host": "covid19-postgres",
         "SSLMode": "prefer",
         "MaintenanceDB": "covid19"
       }
