@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Head
+{
+    <link rel="stylesheet" href="css/login-google.css" asp-append-version="true"/>
+}
+
+@section Scripts
+{
+    <script src="https://apis.google.com/js/client:platform.js"></script>
+    <script src="~/js/login-google.js" asp-append-version="true"></script>
+}
+
+<div class="text-center">
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="img/covid-19.jpg" class="card-img" alt="fique em casa">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body mt-5">
+                    <h5 class="card-title">COVID-19 Monitor</h5>
+                    <p class="card-text">Coronavírus é uma família de vírus que causam infecções respiratórias. O novo agente do coronavírus o SARS-CoV-2 foi descoberto em 31/12/19 após casos registrados na China, este provoca a doença chamada de COVID-19 (Coronavirus Disease 2019). Uma pandemia de COVID-19 está acontecendo no momento, e se espalhou por todo o mundo, forçando toda população mundial a aderir ao estado de quarentena.</p>
+                    <p class="card-text">Esta ferramenta visa fornecer dados e informações que serão úteis para você neste momento, como rastreamento de pessoas infectadas, onde comprar suprimentos médicos, notificação de casos próximos, consulta médica on-line, local de testes e atividades para quarentena.</p>
+                    <div class="row no-gutters">
+                        <div class="col-4 offset-4 text-center">
+                            <div class="g-signin2" id="g-login-btn"></div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters mt-3">
+                        <div class="col-4 offset-4 text-center small">
+                            <a href="#">Usar sem fazer login com o Google</a>
+                        </div>
+                    </div>
+                    <p class="card-text mt-3">
+                        <small class="text-muted">Para uma melhor experiência no uso da ferramenta, é necessário que você faça login com sua conta do google. <br/> <a href="#">Entenda porque pedimos isto?</a></small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

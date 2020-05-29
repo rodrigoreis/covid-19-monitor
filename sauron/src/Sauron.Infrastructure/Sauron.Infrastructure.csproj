@@ -13,9 +13,5 @@
   <ItemGroup>
     <ProjectReference Include="..\Sauron.Domain\Sauron.Domain.csproj" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <Folder Include="MongoDb" />
-  </ItemGroup>
 
 </Project>
