@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Sauron.Job
+namespace Sauron
 {
     public static class Program
     {

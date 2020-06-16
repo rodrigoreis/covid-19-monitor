@@ -2,37 +2,6 @@ version: "3.7"
 
 services:
 
-  postgres:
-    image: postgres:alpine
-    container_name: covid19-postgres
-    restart: always
-    environment:
-      POSTGRES_DB: covid19
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: root
-    ports:
-      - 5432:5432
-    volumes:
-      - covid19-postgres-data:/var/lib/postgresql/data
-    networks:
-      - covid19-network
-
-  pgadmin4:
-    build:
-      dockerfile: ./pgadmin4.dockerfile
-      context: ./db/postgres
-    image: covid19/pgadmin4:alpine
-    container_name: covid19-pgadmin4
-    environment:
-      PGADMIN_DEFAULT_EMAIL: root@covid19
-      PGADMIN_DEFAULT_PASSWORD: root
-    ports:
-      - 8080:80
-    depends_on:
-      - postgres
-    networks:
-      - covid19-network
-
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.7.0
     container_name: covid19-elasticsearch-single

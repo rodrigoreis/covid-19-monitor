@@ -1,0 +1,102 @@
+PUT brasil_io_dataset_covid19_full_data
+{
+	"settings": {
+		"index": {
+			"number_of_shards": 3,
+			"number_of_replicas": 0
+		}
+	},
+	"mappings": {
+		"properties": {
+			"city": {
+				"type": "text",
+				"fields": {
+					"original": {
+						"type": "keyword",
+						"index": true
+					}
+				},
+				"index": true,
+				"analyzer": "portuguese"
+			},
+			"city_ibge_code": {
+				"type": "integer",
+				"index": true
+			},
+			"date": {
+				"type": "date",
+				"index": true
+			},
+			"epidemiological_week": {
+				"type": "integer",
+				"index": true
+			},
+			"estimated_population_2019": {
+				"type": "integer",
+				"index": true
+			},
+			"is_last": {
+				"type": "boolean",
+				"index": true
+			},
+			"is_repeated": {
+				"type": "boolean",
+				"index": true
+			},
+			"last_available_confirmed": {
+				"type": "integer",
+				"index": true
+			},
+			"last_available_confirmed_per_100k_inhabitants": {
+				"type": "float",
+				"index": true
+			},
+			"last_available_date": {
+				"type": "date", 
+				"index": true
+			},
+			"last_available_death_rate": {
+				"type": "float", 
+				"index": true
+			},
+			"last_available_deaths": {
+				"type": "integer", 
+				"index": true
+			},
+			"new_confirmed": {
+				"type": "integer", 
+				"index": true
+			},
+			"new_deaths": {
+				"type": "integer", 
+				"index": true
+			},
+			"order_for_place": {
+				"type": "integer", 
+				"index": true
+			},
+			"place_type": {
+				"type": "text",
+				"fields": {
+					"original": {
+						"type": "keyword",
+						"index": true
+					}
+				},
+				"index": true,
+				"analyzer": "english"
+			},
+			"state": {
+				"type": "text",
+				"fields": {
+					"original": {
+						"type": "keyword",
+						"index": true
+					}
+				},
+				"index": true,
+				"analyzer": "portuguese"
+			}
+		}
+	}
+}
