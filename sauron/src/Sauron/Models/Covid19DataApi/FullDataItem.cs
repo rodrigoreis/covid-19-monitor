@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace Sauron.Models.Covid19DataApi
 {
-    public class Covid19DataApiFullDataItem
+    public class FullDataItem
     {
         [JsonProperty("city")]
         public string City { get; set; }

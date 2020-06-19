@@ -1,4 +1,3 @@
-using System;
 using Hangfire;
 using Hangfire.MemoryStorage;
 using Microsoft.AspNetCore.Builder;
@@ -11,6 +10,7 @@ namespace Sauron.Extensions.Hangfire
     {
         public static void AddHangFireHandler(this IServiceCollection services)
         {
+            services.AddSingleton<IElasticsearchService, ElasticsearchService>();
             services.AddSingleton<IUpdateCovid19DataService, UpdateCovid19DataService>();
 
             services.AddHangfire(config =>

@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace Sauron.Models.Covid19DataApi
 {
-    public class Covid19DataApiResponse<T>
+    public class DataApiResponse<T>
     {
         [JsonProperty("count")]
         public int Count { get; set; }
