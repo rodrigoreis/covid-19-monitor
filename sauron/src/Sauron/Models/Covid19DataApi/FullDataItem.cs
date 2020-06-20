@@ -1,9 +1,10 @@
 ﻿using System;
 using Newtonsoft.Json;
+using Sauron.Models.Elasticsearch;
 
 namespace Sauron.Models.Covid19DataApi
 {
-    public class FullDataItem
+    public class FullDataItem : ElasticsearchDocument
     {
         [JsonProperty("city")]
         public string City { get; set; }
