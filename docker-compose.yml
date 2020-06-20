@@ -34,20 +34,25 @@ services:
       - 5601:5601
     networks:
       - covid19-network
-
-  rabbitmq:
-    image: rabbitmq:management
-    container_name: covid19-rabbitmq
+  
+  sauron:
+    build: 
+      dockerfile: ./sauron/sauron.dockerfile
+      context: ./
+    image: covid-19-monitor/sauron:latest
+    container_name: sauron
+    environment: 
+      Logging__LogLevel__Hangfire: Information
+      ElasticsearchApiBaseAddress: http://elasticsearch:9200
+      Covid19DataApiBaseAddress: https://brasil.io/api/dataset/covid19/
     ports:
-      - 8082:15672
-      - 5672:5672
-      - 25676:25676
-    environment:
-      RABBITMQ_DEFAULT_USER: root
-      RABBITMQ_DEFAULT_PASS: root
+      - 8081:80
+      - 8143:443
+    depends_on: 
+      - elasticsearch
     networks:
       - covid19-network
-
+      
 volumes:
 
   covid19-postgres-data:
@@ -62,3 +67,4 @@ networks:
   covid19-network:
     driver: bridge
     name: covid19-network
+    
