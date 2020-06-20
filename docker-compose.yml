@@ -40,8 +40,12 @@ services:
       dockerfile: ./sauron/sauron.dockerfile
       context: ./
     image: covid-19-monitor/sauron:latest
-    container_name: sauron
+    container_name: covid19-sauron
     environment: 
+      ASPNETCORE_URLS: 'https://+8443'
+      ASPNETCORE_HTTPS_PORT: 8443
+      ASPNETCORE_Kestrel__Certificates__Default__Password: 'covid-19-monitor'
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/certificate.p12
       Logging__LogLevel__Hangfire: Information
       ElasticsearchApiBaseAddress: http://elasticsearch:9200
       Covid19DataApiBaseAddress: https://brasil.io/api/dataset/covid19/
