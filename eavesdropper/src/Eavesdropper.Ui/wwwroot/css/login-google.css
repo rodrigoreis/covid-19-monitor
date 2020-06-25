@@ -1,4 +1,0 @@
-﻿span[id^=not_signed_]:before {
-    content: 'Fazer login com o Google';
-    padding-right:9999px;
-}
