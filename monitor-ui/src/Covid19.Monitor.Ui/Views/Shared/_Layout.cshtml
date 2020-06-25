@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>@ViewData["Title"] - Covid19.Monitor.Ui</title>
+        <link href="~/lib/vendor/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+        <link href="~/lib/vendor/Chart.min.css" rel="stylesheet" crossorigin="anonymous"/>
+        <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" crossorigin="anonymous"/>
+        <link href="~/css/site.css" rel="stylesheet" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <nav class="bg-dark flex-md-nowrap navbar navbar-dark p-0 shadow sticky-top">
+            <a class="col-lg-2 col-md-3 mr-0 navbar-brand px-3" href="#"><i class="fas fa-virus"></i> Covid-19 Monitor</a>
+            <button aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation" class="collapsed d-md-none navbar-toggler position-absolute" data-target="#sidebarMenu" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="text-white">
+                <h1 class="h3"><i class="fad @ViewData["Icon"]"></i> @ViewData["Title"]</h1>
+            </div>
+
+            <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group mr-2">
+                    <button class="btn btn-outline-secondary btn-sm" type="button">
+                        <i class="fas fa-share-alt"></i>
+                        Compartilhar
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm" type="button" style="border-left: none;">
+                        <i class="fas fa-file-download"></i>
+                        Baixar
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="bg-light collapse col-lg-2 col-md-3 d-md-block sidebar" id="sidebarMenu">
+                    <div class="pt-3 sidebar-sticky">
+
+                        <h6 class="align-items-center d-flex justify-content-between mb-1 mt-0 px-3 sidebar-heading text-muted">
+                            <span>Menu</span>
+                        </h6>
+
+                        <ul class="flex-column nav">
+                            <li class="nav-item">
+                                <a data-id="panel" class="nav-link" asp-controller="Panel" asp-action="Index">
+                                    <i class="fad fa-chart-line"></i>
+                                    Painel
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-id="supply" class="nav-link" asp-controller="Supply" asp-action="Index">
+                                    <i class="fad fa-pump-soap"></i>
+                                    Suprimentos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-id="medical-consultation" class="nav-link" asp-controller="MedicalConsultation" asp-action="Index">
+                                    <i class="fad fa-stethoscope"></i>
+                                    Consulta On-line
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-id="covid-19-test" class="nav-link" asp-controller="Covid19Test" asp-action="Index">
+                                    <i class="fad fa-vial"></i>
+                                    Testes para Covid-19
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-id="stay-home" class="nav-link" asp-controller="StayHome" asp-action="Index">
+                                    <i class="fad fa-home"></i>
+                                    Fique em casa
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+
+                <main class="col-lg-10 col-md-9 ml-sm-auto px-md-4 mt-3" role="main">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+        <script src="~/lib/vendor/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="~/lib/vendor/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="~/lib/vendor/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>
