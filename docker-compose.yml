@@ -2,9 +2,41 @@ version: "3.7"
 
 services:
 
+  postgres:
+    image: postgres:alpine
+    container_name: covid19-postgres
+    environment:
+      POSTGRES_DB: covid19
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    ports:
+      - 5432:5432
+    volumes:
+      - covid19-postgres-data:/var/lib/postgresql/data
+    networks:
+      - covid19-network
+
+  pgadmin:
+    build:
+      dockerfile: ./db/postgres/pgadmin4.dockerfile
+      context: ./
+    image: covid19/pgadmin4:alpine
+    container_name: covid19-pgadmin
+    depends_on: 
+      - postgres     
+    environment:
+      PGADMIN_DEFAULT_EMAIL: root@pgadmin
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - 8080:80
+    networks:
+      - covid19-network
+
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.8.0
     container_name: covid19-elasticsearch-single
+    depends_on: 
+      - postgres    
     environment:
       - node.name=covid19-elasticsearch-single
       - cluster.name=covid19-elasticsearch-cluster
@@ -31,29 +63,42 @@ services:
       SERVER_NAME: covid19-kibana
       ELASTICSEARCH_HOSTS: http://elasticsearch:9200
     ports:
-      - 5601:5601
+      - 8081:5601
     networks:
       - covid19-network
-  
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: covid19-rabbitmq
+    ports:
+      - 8082:15672
+      - 5672:5672
+      - 25676:25676
+    environment:
+      RABBITMQ_DEFAULT_USER: root
+      RABBITMQ_DEFAULT_PASS: root
+    networks:
+      - covid19-network
+
   sauron:
     build: 
       dockerfile: ./sauron/sauron.dockerfile
       context: ./
     image: covid-19-monitor/sauron:latest
     container_name: covid19-sauron
+    depends_on: 
+      - elasticsearch
+      - rabbitmq
     environment: 
-      ASPNETCORE_URLS: 'https://+8443'
-      ASPNETCORE_HTTPS_PORT: 8443
+      ASPNETCORE_URLS: 'https://+8083'
+      ASPNETCORE_HTTPS_PORT: 8083
       ASPNETCORE_Kestrel__Certificates__Default__Password: 'covid-19-monitor'
       ASPNETCORE_Kestrel__Certificates__Default__Path: /https/certificate.p12
       Logging__LogLevel__Hangfire: Information
       ElasticsearchApiBaseAddress: http://elasticsearch:9200
       Covid19DataApiBaseAddress: https://brasil.io/api/dataset/covid19/
     ports:
-      - 8081:80
-      - 8143:443
-    depends_on: 
-      - elasticsearch
+      - 8083:443
     networks:
       - covid19-network
       
@@ -71,4 +116,3 @@ networks:
   covid19-network:
     driver: bridge
     name: covid19-network
-    
