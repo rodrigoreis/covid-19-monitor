@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B79C9595-69C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Covid19.Monitor.Sv", "src\Covid19.Monitor.Sv\Covid19.Monitor.Sv.csproj", "{D209F8EA-0FE5-4133-8438-B0DD02CF6359}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Covid19.Monitor.Sv.Gateways", "src\Covid19.Monitor.Sv.Gateways\Covid19.Monitor.Sv.Gateways.csproj", "{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D209F8EA-0FE5-4133-8438-B0DD02CF6359} = {B79C9595-69C3-43BD-BBCE-AF5F0C13BB40}
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A} = {B79C9595-69C3-43BD-BBCE-AF5F0C13BB40}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D209F8EA-0FE5-4133-8438-B0DD02CF6359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -35,5 +38,17 @@ Global
 		{D209F8EA-0FE5-4133-8438-B0DD02CF6359}.Release|x64.Build.0 = Release|Any CPU
 		{D209F8EA-0FE5-4133-8438-B0DD02CF6359}.Release|x86.ActiveCfg = Release|Any CPU
 		{D209F8EA-0FE5-4133-8438-B0DD02CF6359}.Release|x86.Build.0 = Release|Any CPU
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}.Debug|x64.Build.0 = Debug|Any CPU
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}.Debug|x86.Build.0 = Debug|Any CPU
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}.Release|x64.ActiveCfg = Release|Any CPU
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}.Release|x64.Build.0 = Release|Any CPU
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}.Release|x86.ActiveCfg = Release|Any CPU
+		{49DF0D7A-EF0D-4D51-A806-6C69E0FE509A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

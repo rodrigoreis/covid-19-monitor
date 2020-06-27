@@ -6,7 +6,7 @@ services:
     image: postgres:alpine
     container_name: covid19-postgres
     environment:
-      POSTGRES_DB: covid19
+      POSTGRES_DB: postgres
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
     ports:
@@ -18,7 +18,7 @@ services:
 
   pgadmin:
     build:
-      dockerfile: ./db/postgres/pgadmin4.dockerfile
+      dockerfile: ./db/pgadmin4/pgadmin4.dockerfile
       context: ./
     image: covid19/pgadmin4:alpine
     container_name: covid19-pgadmin

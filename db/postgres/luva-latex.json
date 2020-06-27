@@ -1,0 +1,538 @@
+{
+  "search_metadata": {
+    "id": "5ef6dbf70cdedf446bad021e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/0127d62de2e389aa/5ef6dbf70cdedf446bad021e.json",
+    "created_at": "2020-06-27 05:41:11 UTC",
+    "processed_at": "2020-06-27 05:41:11 UTC",
+    "google_url": "https://www.google.com.br/search?q=luva+latex&oq=luva+latex&uule=w+CAIQICIGQnJhemls&hl=pt-br&gl=br&tbm=shop&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/0127d62de2e389aa/5ef6dbf70cdedf446bad021e.html",
+    "total_time_taken": 6.25
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "luva latex",
+    "location_requested": "Brazil",
+    "location_used": "Brazil",
+    "google_domain": "google.com.br",
+    "hl": "pt-br",
+    "gl": "br",
+    "device": "desktop",
+    "tbm": "shop"
+  },
+  "search_information": {
+    "shopping_results_state": "Results for exact spelling",
+    "query_displayed": "luva latex"
+  },
+  "filters": [
+    {
+      "type": "Preço",
+      "options": [
+        {
+          "text": "Até R$ 30",
+          "tbs": "vw:l,mr:1,price:1,ppr_max:30"
+        },
+        {
+          "text": "R$ 30 – R$ 60",
+          "tbs": "vw:l,mr:1,price:1,ppr_min:30,ppr_max:60"
+        },
+        {
+          "text": "R$ 60 – R$ 100",
+          "tbs": "vw:l,mr:1,price:1,ppr_min:60,ppr_max:100"
+        },
+        {
+          "text": "Acima de R$ 100",
+          "tbs": "vw:l,mr:1,price:1,ppr_min:100"
+        }
+      ]
+    },
+    {
+      "type": "Categoria",
+      "options": [
+        {
+          "text": "Luvas domésticas",
+          "tbs": "vw:l,mr:1,root_cat:530590"
+        },
+        {
+          "text": "Luvas de segurança",
+          "tbs": "vw:l,mr:1,root_cat:536214"
+        }
+      ]
+    },
+    {
+      "type": "Tamanho",
+      "options": [
+        {
+          "text": "PP",
+          "tbs": "vw:l,mr:1,cat:511,pdtr0:898497%7C898498"
+        },
+        {
+          "text": "P",
+          "tbs": "vw:l,mr:1,cat:511,pdtr0:898497%7C898499"
+        },
+        {
+          "text": "M",
+          "tbs": "vw:l,mr:1,cat:511,pdtr0:898497%7C898500"
+        },
+        {
+          "text": "G",
+          "tbs": "vw:l,mr:1,cat:511,pdtr0:898497%7C898603"
+        }
+      ]
+    },
+    {
+      "type": "Tipo",
+      "options": [
+        {
+          "text": "Multiuso",
+          "tbs": "vw:l,mr:1,cat:511,pdtr0:898700%7C919717"
+        },
+        {
+          "text": "Exame",
+          "tbs": "vw:l,mr:1,cat:511,pdtr0:898700%7C898702"
+        }
+      ]
+    },
+    {
+      "type": "Material",
+      "options": [
+        {
+          "text": "Látex",
+          "tbs": "vw:l,mr:1,cat:511,pdtr0:898703%7C898493"
+        },
+        {
+          "text": "Vinil",
+          "tbs": "vw:l,mr:1,cat:511,pdtr0:898703%7C898494"
+        },
+        {
+          "text": "Nitrilo",
+          "tbs": "vw:l,mr:1,cat:511,pdtr0:898703%7C898495"
+        }
+      ]
+    },
+    {
+      "type": "Recursos",
+      "options": [
+        {
+          "text": "Sem pó",
+          "tbs": "vw:l,mr:1,cat:511,pdtr0:898612%7C898613"
+        },
+        {
+          "text": "Sem látex",
+          "tbs": "vw:l,mr:1,cat:511,pdtr0:898606%7C898607"
+        }
+      ]
+    },
+    {
+      "type": "Condição",
+      "options": [
+        {
+          "text": "Itens novos",
+          "tbs": "vw:l,mr:1,new:1"
+        },
+        {
+          "text": "Itens usados",
+          "tbs": "vw:l,mr:1,new:3"
+        }
+      ]
+    },
+    {
+      "type": "Vendedor",
+      "options": [
+        {
+          "text": "Americanas.com",
+          "tbs": "vw:l,mr:1,merchagg:g103278022"
+        },
+        {
+          "text": "Casas Bahia",
+          "tbs": "vw:l,mr:1,merchagg:g115160181"
+        },
+        {
+          "text": "Extra.com.br",
+          "tbs": "vw:l,mr:1,merchagg:g113289336"
+        },
+        {
+          "text": "Mercado Livre",
+          "tbs": "vw:l,mr:1,merchagg:g8670533"
+        },
+        {
+          "text": "Pontofrio.com",
+          "tbs": "vw:l,mr:1,merchagg:g115172300"
+        }
+      ]
+    }
+  ],
+  "shopping_results": [
+    {
+      "position": 1,
+      "title": "Luva Latex Com Pó – CX. C/ 100 UNID",
+      "link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwietfOxpKHqAhWDhsAKHZOqDjIYABAEGgJpbQ&sig=AOD64_2QVpTPzJPbPXGJbyl1JU6jPkNBrA&ctype=5&q=&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q2CkIjAM&adurl=",
+      "source": "Maxibella Moveis",
+      "price": "R$ 22,00",
+      "extracted_price": 22.0,
+      "snippet": "Compre na Maxibella Luva Latex Com Pó – CX. C/ 100 UNID por R$ 45,90. Faça seu pedido, pague-o online e receba onde quiser.",
+      "extensions": [
+        "Multiuso",
+        "Látex"
+      ],
+      "thumbnail": "data:image/webp;base64,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"
+    },
+    {
+      "position": 2,
+      "title": "Luva Procedimento de Látex Descarpack c/500 un kit",
+      "link": "https://www.google.com.br/shopping/product/2511387908676423445?q=luva+latex&uule=w+CAIQICIGQnJhemls&oq=luva+latex&gl=br&hl=pt-br&prds=epd:7610646332525186640,paur:ClkAsKraXxIHa0YzDlw-XdPOrTN-JO-1A-x28DD3Ftu3u5n2luG42jdfMg137YXj6TAG3y-Vu2PxmVFpDtlPLP6P0wwZ1qjE3GOaQs7KmQJjcswHJDHGKBoYcRIZAFPVH70VQpxqcPpKzXp4BE6ScQcSgXTFHA,prmr:1&sa=X&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8wIIlgM",
+      "product_id": "2511387908676423445",
+      "serpapi_product_api": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&product_id=2511387908676423445",
+      "source": "Magazine Luiza",
+      "price": "R$ 32,56/mês",
+      "extracted_price": 32.56,
+      "snippet": "Descrição do Produto:Luva Descarpack de Látex - Fabricadas de modo a oferecer maior resistência, as Luvas para Procedimentos ...",
+      "extensions": [
+        "G",
+        "Multiuso",
+        "Látex"
+      ],
+      "thumbnail": "data:image/webp;base64,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"
+    },
+    {
+      "position": 3,
+      "title": "Luva Nitrílica S/ Pó Azul Tamanho M - Nugard",
+      "link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwietfOxpKHqAhWDhsAKHZOqDjIYABAGGgJpbQ&sig=AOD64_2wqcc_QmUFuUMDdMIpMF16KR205A&ctype=5&q=&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q2CkIpgM&adurl=",
+      "source": "Mercado Livre",
+      "price": "R$ 5,50/mês",
+      "extracted_price": 5.5,
+      "snippet": "Luva Nitrílica S/ Pó Azul Tamanho M - Nugard",
+      "extensions": [
+        "M",
+        "Sem pó",
+        "Multiuso",
+        "Nitrilo"
+      ],
+      "thumbnail": "data:image/webp;base64,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"
+    },
+    {
+      "position": 4,
+      "title": "Luva Nitrílica Preta Sem Pó Tam.M - C/100Unidades - Supermax",
+      "link": "https://www.google.com.br/shopping/product/2441989674162235209?q=luva+latex&uule=w+CAIQICIGQnJhemls&oq=luva+latex&gl=br&hl=pt-br&prds=epd:17846219946553521895,paur:ClkAsKraX0woIU00fUzML6FxlRCNxAMsmGlmWrK0J2-VbhtYCVpZWomdbW05-lEAPJ-GGtVN6LPvf9cIFA3q-ov7PsC8jWuDSTnRmhye7DDji3-PQxMR3lWfaBIZAFPVH722yNSicWgsWy6PaHaUUpStY0___A,prmr:1&sa=X&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8wIIswM",
+      "product_id": "2441989674162235209",
+      "serpapi_product_api": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&product_id=2441989674162235209",
+      "source": "Casas Bahia",
+      "price": "R$ 13,00/mês",
+      "extracted_price": 13.0,
+      "snippet": "As luvas para procedimento não cirúrgico fabricadas em Nitrilo Supermax Microtexturizada Preta tamanho M são fabricadas ...",
+      "extensions": [
+        "Santa Clara",
+        "M",
+        "Sem látex",
+        "Sem pó",
+        "Multiuso",
+        "Nitrilo"
+      ],
+      "thumbnail": "data:image/webp;base64,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"
+    },
+    {
+      "position": 5,
+      "title": "Luva de Nitrilo Para Procedimento Sem Pó Embramac P",
+      "link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwietfOxpKHqAhWDhsAKHZOqDjIYABAMGgJpbQ&sig=AOD64_1rfip7ruDjve0HYMCPxvl1lU02QQ&ctype=5&q=&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q2CkIxwM&adurl=",
+      "source": "Casas Bahia",
+      "price": "R$ 22,14",
+      "extracted_price": 22.14,
+      "snippet": "Características Técnicas:- Luva para procedimento não cirúrgico;- Borracha sintética (nitrilo);- Superfície texturizada em ...",
+      "extensions": [
+        "P",
+        "Sem látex",
+        "Sem pó",
+        "Exame",
+        "Nitrilo"
+      ],
+      "thumbnail": "data:image/webp;base64,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"
+    },
+    {
+      "position": 6,
+      "title": "Luva Nitrilica Para Procedimento Rosa Tamanho G Santa Clara",
+      "link": "https://www.google.com.br/shopping/product/8251532384291802596?q=luva+latex&uule=w+CAIQICIGQnJhemls&oq=luva+latex&gl=br&hl=pt-br&prds=epd:799032466693784710,paur:ClkAsKraX3tKA6NO_vrtMQle0Nc1gW_SoxIDajhj_33QT8yT3EhLcQ9x1hglm7hn1oR0u4zAQJuFu-Uvmv7Nm8lzXvPb9Z0Nm4LAejV7PKJHTt7TF017c-l66RIZAFPVH73V6rnYZnwqrRgcNZUK39vRbwFfeA,prmr:1&sa=X&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8wII1AM",
+      "product_id": "8251532384291802596",
+      "serpapi_product_api": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&product_id=8251532384291802596",
+      "source": "Americanas.com",
+      "price": "R$ 10,08/mês",
+      "extracted_price": 10.08,
+      "snippet": "LUVAS PROFISSIONAIS SANTA CLARA CONTÉM: 1un (pacote) com 12 unidades luvas nitrilicas na cor Rosa - Tamanho G Luvas ...",
+      "extensions": [
+        "Santa Clara",
+        "G",
+        "Multiuso",
+        "Nitrilo"
+      ],
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRda8bqhlCFsUyTVVwf-xdn-bgZ59ng8gOxJFNg8BYoLDEwA0GOhabqAt1BDG77cVq3jL0evi-KEgOXZT3jK0bULyG0ezENswfEPnjDHKuxaNYSiW7pK94R&usqp=CAE"
+    },
+    {
+      "position": 7,
+      "title": "Luva Látex Com Pó P 100un Talge",
+      "link": "https://www.google.com.br/shopping/product/7336680403741466501?q=luva+latex&uule=w+CAIQICIGQnJhemls&oq=luva+latex&gl=br&hl=pt-br&prds=epd:15724822893900941230,paur:ClkAsKraX6sY7HkE-BUPbz6Q838tI-J_oNwWhAwQGu71aBCC9SJ66bqI-dUR5QPP_ie_jODASuAIWLvKDWMti6jSXOFG0jskhxfmNXyyB_0KYamge6JftvC65xIZAFPVH71A3rAHtE0HJhbBvvvhnH3U086UXg,prmr:1&sa=X&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8wII4gM",
+      "product_id": "7336680403741466501",
+      "serpapi_product_api": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&product_id=7336680403741466501",
+      "source": "Magazine Luiza",
+      "price": "R$ 37,08",
+      "extracted_price": 37.08,
+      "snippet": "Tamanho P (pequena) Luva Descartável fabricada em Látex na cor natural sem adição de pigmentação, com pó absorvível e não ...",
+      "extensions": [
+        "P",
+        "Multiuso",
+        "Látex"
+      ],
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQyEncGd8VZy8jRC3nh-3wLl6MBSxzX9QafaIVsig4wprZUon6tJuIBcgc3zmiBO0p1aJVydPIQuHZ0MkhhzQYCRVx79tXo5NVqIpC6qT639C8_uILPnPKwaQ&usqp=CAE"
+    },
+    {
+      "position": 8,
+      "title": "10 Caixas De Luva Nitrílica S/ Pó Preta Pp - Unigloves",
+      "link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwietfOxpKHqAhWDhsAKHZOqDjIYABAPGgJpbQ&sig=AOD64_39bn0FBog7Qc0nGwFMRXGCiOYhOw&ctype=5&q=&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q2CkI8gM&adurl=",
+      "source": "Mercado Livre",
+      "price": "R$ 19,25/mês",
+      "extracted_price": 19.25,
+      "snippet": "10 Caixas de Luva Nitrílica S/ Pó Preta PP - Unigloves *Fotos meramente ilustrativas",
+      "extensions": [
+        "PP",
+        "Sem pó",
+        "Multiuso",
+        "Nitrilo"
+      ],
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSIAEedTS3RAuFDRq0R1p6efBxId916eJrsD2kvbRHlt6x-uUrVG1QWp5EmIMIpcBGV8xnbAwX4CESr8OdYbOpibvyfbF3Y9Oq284Y9t2Zf5jskVu7BBPqU&usqp=CAE"
+    },
+    {
+      "position": 9,
+      "title": "Luva Descartável Vinil - Com Pó - 100 Unidades - Talge",
+      "link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwietfOxpKHqAhWDhsAKHZOqDjIYABAUGgJpbQ&sig=AOD64_15gqduhShMuVevcJo8Lxrv-GWHSA&ctype=5&q=&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q2CkI_wM&adurl=",
+      "source": "Magazine Luiza",
+      "price": "R$ 27,20",
+      "extracted_price": 27.2,
+      "snippet": "\"Luva Descartável fabricada em PVC - Vinil Com Pó (amido, talco). Luva Descartavel Ambidestra, anatômica e não estéril. Sua ...",
+      "extensions": [
+        "Multiuso",
+        "Vinil"
+      ],
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSYUP7B90h8WOibLZtBMAFdx-kytdNWwzHoBjCHf9Y-48SAYoTNsd1Jfz03c3T5fYm271zvgl0cxUzyFITdYtk6xpzt5Vp-EgM9zqNsd8RhVG4yiNd12c53Kw&usqp=CAE"
+    },
+    {
+      "position": 10,
+      "title": "Luvas profissionais m cabeleireiro latex branca santa clara",
+      "link": "https://www.google.com.br/shopping/product/13133834828570824300?q=luva+latex&uule=w+CAIQICIGQnJhemls&oq=luva+latex&gl=br&hl=pt-br&prds=epd:5965016767270562339,paur:ClkAsKraX9ktVjVj4rKV8qOXA0jC7LI7hoZEq4XcsT3_Yj8_A2RMnz1eEdsgeaP_BGv4xQf4tivs8pvQRjYdWTgZau_4bxNjU6LZL9G-7LPqnUDw2xKDlQ_erhIZAFPVH732Izw-9ODaf88psDzoFZxrCpeAEw,prmr:1&sa=X&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8wIIiQQ",
+      "product_id": "13133834828570824300",
+      "serpapi_product_api": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&product_id=13133834828570824300",
+      "source": "Magazine Luiza",
+      "price": "R$ 9,90",
+      "extracted_price": 9.9,
+      "snippet": "LUVAS PROFISSIONAIS EM LATEX SANTA CLARA CONTÉM: 1un (pacote) com 12 unidades de luvas em látex cor unica - Tamanho M Luvas em ...",
+      "extensions": [
+        "Santa Clara",
+        "M",
+        "Sem pó",
+        "Multiuso",
+        "Látex"
+      ],
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRBi-R4RK7NrEB38LoA34eOAY8aXuf6ussti4nUOJwqVK5VqD19FRoHpW2cE9nS2mtBjPUd67J4HIl6hDhcwg18Aa6-98J3P1upVMTWbvFuSnxJYUMpIclD&usqp=CAE"
+    },
+    {
+      "position": 11,
+      "title": "Luva Vinil Transparente Sem Amido G com 100 UN Talge",
+      "link": "https://www.google.com.br/shopping/product/12789418640945289278?q=luva+latex&uule=w+CAIQICIGQnJhemls&oq=luva+latex&gl=br&hl=pt-br&prds=epd:17141812457965971080,paur:ClkAsKraXwIip6Ld93UkTvZlc9dVOHYHlFqYcxM-ExTJSEB-fq1twqdw7iKkkWWn4vCc156oQZ5UXY7vY_aggYcM8MBu5e47sssByRTJGBJPCGkPPCW6hmG44BIZAFPVH71Xp6PytP3Hm2q6YF8N7AVV91AmfQ,prmr:1&sa=X&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8wIImQQ",
+      "product_id": "12789418640945289278",
+      "serpapi_product_api": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&product_id=12789418640945289278",
+      "source": "Gimba.com",
+      "price": "R$ 16,37",
+      "extracted_price": 16.37,
+      "snippet": "Luvas de Vinil G Sem Pó Ideal para restaurantes, confeitarias, clinicas estéticas entre outros, mantendo a higiene de ...",
+      "extensions": [
+        "G",
+        "Sem látex",
+        "Sem pó",
+        "Multiuso",
+        "Vinil"
+      ],
+      "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTqvltJFkEP4FAIqQ7AK8RM__7G8p5-TYjAl-W3xfUmeMCRvBCz9LYpBDsaObMmUC4k87u_e_9xilGaH4pfdgl89Og-GBd7nNrnAWksPutS&usqp=CAE"
+    },
+    {
+      "position": 12,
+      "title": "Luva Protetora de Latex Descarpack M 100 Unidades",
+      "link": "https://www.google.com.br/shopping/product/13413708815809113770?q=luva+latex&uule=w+CAIQICIGQnJhemls&oq=luva+latex&gl=br&hl=pt-br&prds=epd:2532164556310556089,paur:ClkAsKraX39s5bk5xzbJ4pv413riW5pZvqzyUPLaS2X6DlqJoh47ruysnRxzOU_zjhRBMm6xjXOVmjldKyo9Wq3mivsmTZeLxCBr8O4-Y_hyYdlB0HBtuSBGhRIZAFPVH70EgIorlXOcEdRDCJWS6o3glpqGig,prmr:1&sa=X&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8wIIqgQ",
+      "product_id": "13413708815809113770",
+      "serpapi_product_api": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&product_id=13413708815809113770",
+      "source": "Drogaria São Paulo",
+      "price": "R$ 39,99",
+      "extracted_price": 39.99,
+      "snippet": "Detalhes do produto: Confeccionadas em Látex, Não estéril, Uso não médicos, Ambidestras, Produto de uso único. Desenvolvida ...",
+      "extensions": [
+        "M",
+        "Multiuso",
+        "Látex"
+      ],
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSNPhD1aHXLiGKs-csZ-jiVZc635pJ42N4FxXUBDYJSY2mtDR7Js5fWMTlnde9fCnpNlIPYRsIM-FeVibRCxVkzMFoyVzgRdjQbUv46XXnXrWcSOUWypb3V&usqp=CAE"
+    },
+    {
+      "position": 13,
+      "title": "Luvas profissionais m em latex black marco boni",
+      "link": "https://www.google.com.br/shopping/product/13723712878357568662?q=luva+latex&uule=w+CAIQICIGQnJhemls&oq=luva+latex&gl=br&hl=pt-br&prds=epd:4804754264610375754,paur:ClkAsKraX3S0p9xOgQzrtSpN_kUqRGuOXduv42MA_OSW5yYoB77SXfYAQj3oBCbYIqBPrVwj3X5oEOhiH4_haT9nCBDo-cEhYx7vtsKJMftQga1kRaf7ulpIKxIZAFPVH73EBDx1b452_yYYqFlfR-ISquzjZQ,prmr:1&sa=X&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8wIIuQQ",
+      "product_id": "13723712878357568662",
+      "serpapi_product_api": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&product_id=13723712878357568662",
+      "source": "Magazine Luiza",
+      "price": "R$ 21,61",
+      "extracted_price": 21.61,
+      "rating": 5,
+      "reviews": 3,
+      "snippet": "Por ser mais espessa que as luvas descartáveis, possuem excelentes resistências à abrasão e rasgos, permitindo inclusive que ...",
+      "extensions": [
+        "M",
+        "Multiuso",
+        "Látex"
+      ],
+      "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQkcl9KOH22NZV9dlHCU6oTpgtSgN7sVM5-xlgU0JVNGV5KxEk5JVYtK1x7yu0mjMDu_WGZrCXTY__AY_KBjvyixb3MctYfUkUS1q7LiFZE&usqp=CAE"
+    },
+    {
+      "position": 14,
+      "title": "Luvas Para Procedimentos Supermax Pequena Com 100 Unidades",
+      "link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwietfOxpKHqAhWDhsAKHZOqDjIYABAdGgJpbQ&sig=AOD64_2XzeDA61Oel2y56Ygdgwjx38HZOQ&ctype=5&q=&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q2CkIyQQ&adurl=",
+      "source": "Zoom",
+      "price": "R$ 20,00/mês",
+      "extracted_price": 20.0,
+      "snippet": "DescriçãoA Luva Latex de Procedimento para a proteção do profissional de saúde nos procedimentos não invasivos. Ela é indicada ...",
+      "extensions": [
+        "Aurelia",
+        "P",
+        "Exame",
+        "Látex"
+      ],
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRmQQfJWoxCIt_y-EhMRokQjFGkDlqmIczp9p7Az_vdb_0BwwDcDU6Kgh2xZ02PYO6_5btxHJgNTTMYAYJNSd575KtDyzy_LqpKGdjw7QlU-HH2vTzCVBSu&usqp=CAE"
+    },
+    {
+      "position": 15,
+      "title": "Luva Protetora de Latex Descarpack M 100 Unidades",
+      "link": "https://www.google.com.br/shopping/product/6474657208742254119?q=luva+latex&uule=w+CAIQICIGQnJhemls&oq=luva+latex&gl=br&hl=pt-br&prds=epd:5703702566921871599,paur:ClkAsKraXz9RaD39RIxtTGBksxoJ6NjNIo3pJZ4RJSVYjD6RFWNjE0pncRA4rH0bM9QfOQsmPxxk0YH6VZ4OD2Fsj58Fm-l1hoob9C0bhn4xPS_MO-IXi-N2uRIZAFPVH72UW3EaoQQP8wG2bqpjrtDs1klCvQ,prmr:1&sa=X&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8wII1gQ",
+      "product_id": "6474657208742254119",
+      "serpapi_product_api": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&product_id=6474657208742254119",
+      "source": "Drogaria São Paulo",
+      "price": "R$ 39,99",
+      "extracted_price": 39.99,
+      "snippet": "Desenvolvida para a proteção dos profissionais, nos procedimentos não invasivos. Uso único e por procedimento, são anatômicas ...",
+      "extensions": [
+        "P",
+        "Multiuso",
+        "Látex"
+      ],
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQasg0qUkZujSiE5tiQevwy3VC9iqQAnPf5kLCs-nId6mp9gTiQQ03yuqPWmVXmauSkWVymF7qM6BXnjTChK-KS1Cb1oCDRXcn7lo2oCFNB&usqp=CAE"
+    },
+    {
+      "position": 16,
+      "title": "Luva De Vinil P Com Pó Talge 100 Unidades",
+      "link": "https://www.google.com.br/shopping/product/15932654737551182219?q=luva+latex&uule=w+CAIQICIGQnJhemls&oq=luva+latex&gl=br&hl=pt-br&prds=epd:17098226325143367310,paur:ClkAsKraXzSX6P3h3TXps5dp0qRsfpYwJMAyFXE1l-lEuZ9auBSeh5v8r3xeqdvimr7HFkcPj0COWihZD50QiUTARENV0QxxIjYPl-6C3EZnAMrmIzf8fxmMxxIZAFPVH73tdNkQdcwsJXHiq-zhSkDS_2_kIw,prmr:1&sa=X&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8wII4wQ",
+      "product_id": "15932654737551182219",
+      "serpapi_product_api": "https://serpapi.com/search.json?device=desktop&engine=google_product&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&product_id=15932654737551182219",
+      "source": "Mercado Livre",
+      "price": "R$ 5,00/mês",
+      "extracted_price": 5.0,
+      "rating": 5,
+      "reviews": 1,
+      "snippet": "A Luva de procedimento em Vinil da Talge é indicada para a manipulação de alimentos e bebidas, procedimentos estéticos simples ...",
+      "extensions": [
+        "P",
+        "Sem látex",
+        "Multiuso",
+        "Vinil"
+      ],
+      "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRAY6j8Nn2eEN6LY4UlIL7WTMBB5kl1HV_xC8PB-V0L4URx3qwdwzvVyz0OQkO4_1JAS5qT6toFe5J9vQlXiCLHazMlgFKOy6E3GEliaMZ1cmZ3-ER09prD&usqp=CAE"
+    },
+    {
+      "position": 17,
+      "title": "Luva De Vinil P Sem Pó Talge Com 100 Un",
+      "link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwietfOxpKHqAhWDhsAKHZOqDjIYABAkGgJpbQ&sig=AOD64_0iyaGBBJCAza5UhxMEkNygHBN7UA&ctype=5&q=&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q2CkI9QQ&adurl=",
+      "source": "Extra.com.br",
+      "price": "R$ 25,00",
+      "extracted_price": 25.0,
+      "snippet": "Aplicação no manuseio de alimentos, trabalhos leves, limpeza e manutenção.Produzidas em vinil. É uma alternativa viável para ...",
+      "extensions": [
+        "P",
+        "Sem látex",
+        "Sem pó",
+        "Multiuso",
+        "Vinil"
+      ],
+      "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQKhVGNNZ9sKC4j_KEwNWG0HYmSFMXaGVyXIMJPtabhTS62ecMzD-KPv0ztMkxpQX8a35r2pr9RWjpO5Dgt-quevj8d_Ppb3ASDld4055tD7G-hQG4i2VYE&usqp=CAE"
+    },
+    {
+      "position": 18,
+      "title": "Kit 10 Caixas Luva Vinil Com Pó Descartável P/ Procedimentos",
+      "link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwietfOxpKHqAhWDhsAKHZOqDjIYABAlGgJpbQ&sig=AOD64_2hBGSUpnaNjR6Gz0lruQ07ShAhJg&ctype=5&q=&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q2CkIggU&adurl=",
+      "source": "Mercado Livre",
+      "price": "R$ 27,33/mês",
+      "extracted_price": 27.33,
+      "snippet": "ATENÇÃO - NO MOMENTO TEMOS AS LUVAS ANUNCIADAS APENAS NO TAMANHO P. Este kit contém 1000 luvas (500 pares). DESCRIÇÃO Luva de ...",
+      "extensions": [
+        "P",
+        "Sem látex",
+        "Multiuso",
+        "Vinil"
+      ],
+      "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSp2S_dHSZoagWZQLhsKAK-ORzL8vncZllVZLW7j4gti2ZemJgBlKUhgp4OrfWWmRrhZn1zMGgcJh8BVfB1z9kzlwDctx6jgljZUDl1knOPdGZcqelM3KnLUg&usqp=CAE"
+    },
+    {
+      "position": 19,
+      "title": "Luva Procedimento Latex Uso Não Médico Tam Pp P M G 500 Unid",
+      "link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwietfOxpKHqAhWDhsAKHZOqDjIYABAnGgJpbQ&sig=AOD64_2P-sbfwAdv6IN62SzKdsJIsUpSug&ctype=5&q=&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q2CkIjwU&adurl=",
+      "source": "Mercado Livre",
+      "price": "R$ 22,45/mês",
+      "extracted_price": 22.45,
+      "snippet": "Somos a DANNY SHOP ARTIGOS PARA PROTEÇÃO E SEGURANÇA Luva De Procedimentos Latex Descarpack P/ USO NÃO MÉDICO c/Talco Tamanho ...",
+      "extensions": [
+        "PP",
+        "Multiuso",
+        "Látex"
+      ],
+      "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRFuEGqnYCTmAN40j5tzEBJwRq1GGg7effGKHDxaxH5EjhEEEGYQBnGpo1Zr_EZLZSvACmnxhludQqoshV1h3jQRyqZyxktWRmOd-kJhwChW2GYS5UBZU5h&usqp=CAE"
+    },
+    {
+      "position": 20,
+      "title": "Luvas Para Procedimentos Supermax Pequena Com 100 Unidades",
+      "link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwietfOxpKHqAhWDhsAKHZOqDjIYABAmGgJpbQ&sig=AOD64_1ez0iS67OqO0GaVRiIah66K_xvWw&ctype=5&q=&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q2CkImwU&adurl=",
+      "source": "Extra.com.br",
+      "price": "R$ 40,00",
+      "extracted_price": 40.0,
+      "snippet": "DescriçãoA Luva Latex de Procedimento para a proteção do profissional de saúde nos procedimentos não invasivos. Ela é indicada ...",
+      "extensions": [
+        "Aurelia",
+        "P",
+        "Exame",
+        "Látex"
+      ],
+      "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQqQkMrIeTSfU96g8Y0dylIw2ij7_gc957jeO9prnR54Iv22lKS-yndEadn9n2XnuUUH0t53QeYzlJvzxNWbS4FgyUaBT-trVs5tC7fw5IQylZkiGKo-7Gu5w&usqp=CAE"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com.br/search?q=luva+latex&gl=br&hl=pt-br&tbs=vw:l,ss:44&tbm=shop&ei=_Nv2XuvIJ4m6tAb66pf4CQ&start=20&sa=N&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8NMDCNIF",
+    "other_pages": {
+      "2": "https://www.google.com.br/search?q=luva+latex&gl=br&hl=pt-br&tbs=vw:l,ss:44&tbm=shop&ei=_Nv2XuvIJ4m6tAb66pf4CQ&start=20&sa=N&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8tMDCMAF",
+      "3": "https://www.google.com.br/search?q=luva+latex&gl=br&hl=pt-br&tbs=vw:l,ss:44&tbm=shop&ei=_Nv2XuvIJ4m6tAb66pf4CQ&start=40&sa=N&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8tMDCMIF",
+      "4": "https://www.google.com.br/search?q=luva+latex&gl=br&hl=pt-br&tbs=vw:l,ss:44&tbm=shop&ei=_Nv2XuvIJ4m6tAb66pf4CQ&start=60&sa=N&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8tMDCMQF",
+      "5": "https://www.google.com.br/search?q=luva+latex&gl=br&hl=pt-br&tbs=vw:l,ss:44&tbm=shop&ei=_Nv2XuvIJ4m6tAb66pf4CQ&start=80&sa=N&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8tMDCMYF",
+      "6": "https://www.google.com.br/search?q=luva+latex&gl=br&hl=pt-br&tbs=vw:l,ss:44&tbm=shop&ei=_Nv2XuvIJ4m6tAb66pf4CQ&start=100&sa=N&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8tMDCMgF",
+      "7": "https://www.google.com.br/search?q=luva+latex&gl=br&hl=pt-br&tbs=vw:l,ss:44&tbm=shop&ei=_Nv2XuvIJ4m6tAb66pf4CQ&start=120&sa=N&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8tMDCMoF",
+      "8": "https://www.google.com.br/search?q=luva+latex&gl=br&hl=pt-br&tbs=vw:l,ss:44&tbm=shop&ei=_Nv2XuvIJ4m6tAb66pf4CQ&start=140&sa=N&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8tMDCMwF",
+      "9": "https://www.google.com.br/search?q=luva+latex&gl=br&hl=pt-br&tbs=vw:l,ss:44&tbm=shop&ei=_Nv2XuvIJ4m6tAb66pf4CQ&start=160&sa=N&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8tMDCM4F",
+      "10": "https://www.google.com.br/search?q=luva+latex&gl=br&hl=pt-br&tbs=vw:l,ss:44&tbm=shop&ei=_Nv2XuvIJ4m6tAb66pf4CQ&start=180&sa=N&ved=0ahUKEwjrtu-xpKHqAhUJHc0KHXr1BZ8Q8tMDCNAF"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&q=luva+latex&start=20&tbm=shop&tbs=vw%3Al%2Css%3A44",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&q=luva+latex&start=20&tbm=shop&tbs=vw%3Al%2Css%3A44",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&q=luva+latex&start=20&tbm=shop&tbs=vw%3Al%2Css%3A44",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&q=luva+latex&start=40&tbm=shop&tbs=vw%3Al%2Css%3A44",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&q=luva+latex&start=60&tbm=shop&tbs=vw%3Al%2Css%3A44",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&q=luva+latex&start=80&tbm=shop&tbs=vw%3Al%2Css%3A44",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&q=luva+latex&start=100&tbm=shop&tbs=vw%3Al%2Css%3A44",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&q=luva+latex&start=120&tbm=shop&tbs=vw%3Al%2Css%3A44",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&q=luva+latex&start=140&tbm=shop&tbs=vw%3Al%2Css%3A44",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&q=luva+latex&start=160&tbm=shop&tbs=vw%3Al%2Css%3A44",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt-br&location=Brazil&q=luva+latex&start=180&tbm=shop&tbs=vw%3Al%2Css%3A44"
+    }
+  }
+}

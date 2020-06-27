@@ -1,3 +1,4 @@
+using Covid19.Monitor.Sv.Gateways;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -10,6 +11,7 @@ namespace Covid19.Monitor.Sv
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddServiceGateways();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
