@@ -1,4 +1,5 @@
-﻿using Covid19.Monitor.Sv.Gateways.IpData;
+﻿using Covid19.Monitor.Sv.Gateways.BrasilIo;
+using Covid19.Monitor.Sv.Gateways.IpData;
 using Covid19.Monitor.Sv.Gateways.SerpApi;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,6 +11,7 @@ namespace Covid19.Monitor.Sv.Gateways
         {
             services.AddScoped<IIpDataGateway, IpDataGateway>();
             services.AddScoped<ISerpApiGateway, SerpApiGateway>();
+            services.AddScoped<IBrasilIoGateway, BrasilIoGateway>();
         }
     }
 }

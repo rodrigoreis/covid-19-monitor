@@ -12,6 +12,10 @@ namespace Covid19.Monitor.Sv.Controllers
     [Route("api/[controller]")]
     public class SupplyController : ControllerBase
     {
+        private const string Alcohol70 = "alcool gel";
+        private const string ProtectiveMask = "mascaras protetoras";
+        private const string LatexGlove = "luvas de latex";
+
         private readonly ILogger<SupplyController> _logger;
 
         public SupplyController(ILogger<SupplyController> logger)
@@ -22,16 +26,36 @@ namespace Covid19.Monitor.Sv.Controllers
         [HttpGet]
         public async Task<IEnumerable<Supply>> Get([FromServices] ISerpApiGateway serpApiGateway)
         {
-            var result = await serpApiGateway.ListProductsAsync("alcool gel");
+            var alcoholResult = await serpApiGateway.ListProductsAsync(Alcohol70);
+            var protectiveMaskResult = await serpApiGateway.ListProductsAsync(ProtectiveMask);
+            var latexGloveResult = await serpApiGateway.ListProductsAsync(LatexGlove);
 
-            return result.Select(p => new Supply
+            var mergedResult = new List<Supply>();
+
+            static Supply CreateSupplyObject(SupplyType type, ShoppingResult result)
             {
-                Type = SupplyType.Alcohol70,
-                Name = p.Title,
-                Vendor = p.Source,
-                Price = p.ExtractedPrice,
-                Link = p.Link
-            });
+                return new Supply
+                {
+                    SupplyId = result.ProductId,
+                    Type = type,
+                    Name = result.Title,
+                    Vendor = result.Source,
+                    Price = result.ExtractedPrice,
+                    Link = result.Link,
+                    Thumbnail = result.Thumbnail
+                };
+            }
+
+            mergedResult.AddRange(alcoholResult.Select(p =>
+                CreateSupplyObject(SupplyType.Alcohol70, p)));
+
+            mergedResult.AddRange(protectiveMaskResult.Select(p =>
+                CreateSupplyObject(SupplyType.ProtectiveMask, p)));
+
+            mergedResult.AddRange(latexGloveResult.Select(p =>
+                CreateSupplyObject(SupplyType.LatexGlove, p)));
+
+            return mergedResult;
         }
     }
 }

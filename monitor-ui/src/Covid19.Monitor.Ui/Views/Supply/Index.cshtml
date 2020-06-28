@@ -1,4 +1,30 @@
-﻿@{
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+@section Scripts
+{
+    <script>
+        window.services = window.services || {};
+        window.services.backend = '@Configuration["BackendUrl"]';
+    </script>
+    <script src="~/js/supply.js" asp-append-version="true"></script>
+}
+
+@{
     ViewData["Icon"] = "fa-pump-soap";
     ViewData["Title"] = "Suprimentos";
 }
+
+<h4>Mapeamento de venda de suprimentos</h4>
+
+<p>
+    A lista abaixo reflete um mapeamento de suprimentos em várias lojas online.
+    Os preços abaixo são monitorados e atualizados diáriamente
+</p>
+
+<div id="preloader" class="alert alert-primary text-center" role="alert" style="display: none">
+    <img src="img/Spinner-0.4s-30px.gif" alt="" title=""/>
+    Arguarde enquando a listagem é montada ...
+</div>
+
+<div id="results" class="row row-cols-1 row-cols-md-3"></div>

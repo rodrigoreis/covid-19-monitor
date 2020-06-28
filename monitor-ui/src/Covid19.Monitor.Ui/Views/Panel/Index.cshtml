@@ -1,132 +1,209 @@
-﻿@{
+﻿@using System.Text.Json
+@model PanelViewModel
+
+@{
     ViewData["Icon"] = "fa-chart-line";
-    ViewData["Title"] = "Gráficos";
+    ViewData["Title"] = "Painel";
 }
 
-<div class="table-responsive">
-    <table class="table table-sm table-striped">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1,001</td>
-                <td>Lorem</td>
-                <td>ipsum</td>
-                <td>dolor</td>
-                <td>sit</td>
-            </tr>
-            <tr>
-                <td>1,002</td>
-                <td>amet</td>
-                <td>consectetur</td>
-                <td>adipiscing</td>
-                <td>elit</td>
-            </tr>
-            <tr>
-                <td>1,003</td>
-                <td>Integer</td>
-                <td>nec</td>
-                <td>odio</td>
-                <td>Praesent</td>
-            </tr>
-            <tr>
-                <td>1,003</td>
-                <td>libero</td>
-                <td>Sed</td>
-                <td>cursus</td>
-                <td>ante</td>
-            </tr>
-            <tr>
-                <td>1,004</td>
-                <td>dapibus</td>
-                <td>diam</td>
-                <td>Sed</td>
-                <td>nisi</td>
-            </tr>
-            <tr>
-                <td>1,005</td>
-                <td>Nulla</td>
-                <td>quis</td>
-                <td>sem</td>
-                <td>at</td>
-            </tr>
-            <tr>
-                <td>1,006</td>
-                <td>nibh</td>
-                <td>elementum</td>
-                <td>imperdiet</td>
-                <td>Duis</td>
-            </tr>
-            <tr>
-                <td>1,007</td>
-                <td>sagittis</td>
-                <td>ipsum</td>
-                <td>Praesent</td>
-                <td>mauris</td>
-            </tr>
-            <tr>
-                <td>1,008</td>
-                <td>Fusce</td>
-                <td>nec</td>
-                <td>tellus</td>
-                <td>sed</td>
-            </tr>
-            <tr>
-                <td>1,009</td>
-                <td>augue</td>
-                <td>semper</td>
-                <td>porta</td>
-                <td>Mauris</td>
-            </tr>
-            <tr>
-                <td>1,010</td>
-                <td>massa</td>
-                <td>Vestibulum</td>
-                <td>lacinia</td>
-                <td>arcu</td>
-            </tr>
-            <tr>
-                <td>1,011</td>
-                <td>eget</td>
-                <td>nulla</td>
-                <td>Class</td>
-                <td>aptent</td>
-            </tr>
-            <tr>
-                <td>1,012</td>
-                <td>taciti</td>
-                <td>sociosqu</td>
-                <td>ad</td>
-                <td>litora</td>
-            </tr>
-            <tr>
-                <td>1,013</td>
-                <td>torquent</td>
-                <td>per</td>
-                <td>conubia</td>
-                <td>nostra</td>
-            </tr>
-            <tr>
-                <td>1,014</td>
-                <td>per</td>
-                <td>inceptos</td>
-                <td>himenaeos</td>
-                <td>Curabitur</td>
-            </tr>
-            <tr>
-                <td>1,015</td>
-                <td>sodales</td>
-                <td>ligula</td>
-                <td>in</td>
-                <td>libero</td>
-            </tr>
-        </tbody>
-    </table>
+@section Scripts
+{
+    <script>
+    !(function ($) {
+        'use strict'
+    
+        let presets = {
+            red: 'rgb(255, 99, 132)',
+            orange: 'rgb(255, 159, 64)',
+            yellow: 'rgb(255, 205, 86)',
+            green: 'rgb(75, 192, 192)',
+            blue: 'rgb(54, 162, 235)',
+            purple: 'rgb(153, 102, 255)',
+            grey: 'rgb(201, 203, 207)',
+            black: 'rgb(0,0,0)'
+        };
+        
+        let ctxCases = document.getElementById('casos').getContext('2d');
+        let ctsDeaths = document.getElementById('obitos').getContext('2d');
+        
+        let transparentize = (color, opacity) => {
+            let alpha = opacity === undefined ? 0.5 : 1 - opacity;
+            return Color(color).alpha(alpha).rgbString();
+        };   
+        
+        let chartCases = new Chart(ctxCases, {
+            type: 'line',
+            data: {
+                labels: ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET', 'OUT', 'NOV', 'DEZ'],
+                datasets: [{
+                    label: 'Casos',
+                    backgroundColor: transparentize(presets.purple),
+                    borderColor: presets.purple,
+                    fill: true,
+                    data: @JsonSerializer.Serialize(Model.CurrentCases),
+                    yAxisID: 'y-axis-1'
+                },{
+                    label: 'Novos Casos',
+                    backgroundColor: transparentize(presets.green),
+                    borderColor: presets.green,
+                    fill: true,
+                    data: @JsonSerializer.Serialize(Model.NewCases),
+                    yAxisID: 'y-axis-2'
+                }]
+            },
+            options: {
+                responsive: true,
+                hoverMode: 'index',
+                stacked: false,
+                title: {
+                    display: true,
+                    text: 'Casos x Novos Casos'
+                },
+                scales: {
+                    yAxes: [{
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                        id: 'y-axis-1',
+                    }, {
+                        type: 'linear',
+                        display: true,
+                        position: 'right',
+                        id: 'y-axis-2',
+                        gridLines: {
+                            drawOnChartArea: false,
+                        },
+                    }],
+                }
+            }
+        });
+
+        
+        let chartDeaths = new Chart(ctsDeaths, {
+            type: 'line',
+            data: {
+                labels: ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET', 'OUT', 'NOV', 'DEZ'],
+                datasets: [{
+                    label: 'Óbitos',
+                    backgroundColor: transparentize(presets.black),
+                    borderColor: presets.black,
+                    fill: true,
+                    data: @JsonSerializer.Serialize(Model.CurrentDeaths),
+                    yAxisID: 'y-axis-2'
+                },{
+                    label: 'Novos Óbitos',
+                    backgroundColor: transparentize(presets.red),
+                    borderColor: presets.red,
+                    fill: true,
+                    data: @JsonSerializer.Serialize(Model.NewDeaths),
+                    yAxisID: 'y-axis-1'
+                }]
+            },
+            options: {
+                responsive: true,
+                hoverMode: 'index',
+                stacked: false,
+                title: {
+                    display: true,
+                    text: 'Óbitos x Novos óbitos'
+                },
+                scales: {
+                    yAxes: [{
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                        id: 'y-axis-1',
+                    }, {
+                        type: 'linear',
+                        display: true,
+                        position: 'right',
+                        id: 'y-axis-2',
+                        gridLines: {
+                            drawOnChartArea: false,
+                        },
+                    }],
+                }
+            }
+        });        
+    
+    }(window.jQuery));
+    </script>
+}
+
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <h4 class="alert-heading">
+        <i class="fad fa-virus"></i>
+        Alerta de COVID-19 na sua região
+        <i class="fad fa-virus"></i>
+    </h4>
+    @Model
+    Foi identificado que você está em <strong>Belo Horizonte</strong> fique atento, pois foram notificados <strong>151,000</strong> casos na sua região, sendo <strong>25</strong> no dia de hoje.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <h5 class="card-header"><i class="fad fa-hospital-user"></i>&nbsp;Casos</h5>
+            <div class="card-body">
+                <small>fonte: Secretarias Estaduais de Saúde (SES).</small>
+                <canvas id="casos" height="150"></canvas>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Total de cados </th>
+                                <th scope="col">Novos casos (até ontem)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Cases)
+                            {
+                                <tr>
+                                    <td>@item.Estado</td>
+                                    <td>@item.Atual</td>
+                                    <td>@item.Novos</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card">
+            <h5 class="card-header"><i class="fad fa-tombstone"></i>&nbsp;Óbitos</h5>
+            <div class="card-body">
+                <small>fonte: Registros em cartórios e Portal da Transparência do Registro Civil.</small>
+                <canvas id="obitos" height="150"></canvas>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Total de óbitos</th>
+                                <th scope="col">Novos óbitos (até ontem)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Deaths)
+                            {
+                                <tr>
+                                    <td>@item.Estado</td>
+                                    <td>@item.Atual</td>
+                                    <td>@item.Novos</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

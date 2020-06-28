@@ -10,4 +10,4 @@
         setActiveClassName(location.pathname);
     })
 
-}(window.jQuery))
+}(window.jQuery));
